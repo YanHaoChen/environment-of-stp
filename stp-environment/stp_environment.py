@@ -4,7 +4,6 @@ class MyTopo( Topo ):
 
     def __init__( self ):
         Topo.__init__( self )
-
         switch_1 = self.addSwitch('s1')
         host_1_1 = self.addHost('h1_1')
         host_1_2 = self.addHost('h1_2')
