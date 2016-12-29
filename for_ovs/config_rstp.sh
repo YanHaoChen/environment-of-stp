@@ -3,7 +3,7 @@
 for i in {1..9}
 do
   ovs-ofctl add-flow s$i action=NORMAL
-  ovs-vsctl set bridge s$i stp_enable=true
+  ovs-vsctl set bridge s$i rstp_enable=true
 done
 
 # vlan 9
@@ -21,3 +21,4 @@ ovs-vsctl set port s9-eth3 tag=10
 # vlan 11
 ovs-vsctl set port s1-eth2 tag=11
 ovs-vsctl set port s9-eth4 tag=11
+
